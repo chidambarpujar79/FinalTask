@@ -1,0 +1,160 @@
+<table class="table" >
+  <thead>
+    <th>articleName</th>
+    <th>categoryName</th>
+    <!-- <th>previewContent</th> -->
+    <th>Action</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of all_articles" >
+      <td>{{item.articleName}}</td>
+      <td>{{item.categoryName}}</td>
+      <td>{{item.previewContent}}</td>
+      <td><button class="btn btn-info" (click)="onUserDelete(item)" >Delete</button>
+      <button class="btn btn-info" (click)="onUserEdit(item)"  >Edit</button>
+      <button class="btn btn-info" (click)="onUserAdd(item)"  >Add</button>
+
+
+
+
+      <!-- <div class=".float-sm-right col-md-3"
+
+   style="background-color:rgba(246, 242, 242, 0.863);display: inline-block; vertical-align: top;padding-top:30px; padding-left:10px">
+
+            <div id="dvSearch">
+
+                <app-searcharticle (emit2)="onSearchClick($event)"></app-searcharticle>
+
+            </div>
+
+        </div> -->
+
+        <!-- <div class=".float-sm-right col-md-3"
+
+  style="background-color:rgba(246, 242, 242, 0.863);display: inline-block; vertical-align: top;padding-top:30px; padding-left:10px">
+
+            <div id="dvSearch">
+
+                <app-searcharticle (emit2)="onSearchClick($event)"></app-searcharticle>
+
+            </div>
+
+        </div> -->
+
+
+
+       <!-- Ng Prime
+
+       <div *ngFor="let item of all_articles ">
+        <div class="ui-g" style="padding: 2em;border-bottom: 1px solid #d9d9d9">
+                <div class="ui-g-12 ui-md-3" style="text-align:center">
+                        <!-- <img src="/assets/images/profile_img.jpg"> <br> <br> -->
+                        <!-- <button  type='button' class="btn btn-primary btn-xs"
+                    (click)='onReadMore(item)'>Read More</button>
+                    <button  class="btn btn-info btn-xs" (click)='onEditArticle(item)'
+                            *ngIf="item.createdByName=='Admin Manjunath'"><i class="fa fa-pencil"> </i>Edit</button>
+                </div>
+                <div class="ui-g-12 ui-md-8 car-details">
+                    <div class="ui-g">
+                        <div class="ui-g-2 ui-sm-6">Vin: </div>
+                        <div class="ui-g-10 ui-sm-6"><b>{{item.articleName}}</b></div>
+
+                        <div class="ui-g-2 ui-sm-6">Year: </div>
+                        <div class="ui-g-10 ui-sm-6"><b>{{item.categoryName}}</b></div>
+
+                        <div class="ui-g-2 ui-sm-6">Brand: </div>
+                        <div class="ui-g-10 ui-sm-6"><b>{{item.Action}}</b></div>
+
+                        <div class="ui-g-2 ui-sm-6">Color: </div>
+                        <div class="ui-g-10 ui-sm-6"><b>{{item.createdByName}}</b></div>
+                    </div>
+                </div> -->
+
+       <!-- <div>
+        <h1>Home</h1>
+        <p>{{item.onUserEdit}}</p>
+        <button (click)="openModal('custom-modal-1')">Open Modal 1</button>
+        <button (click)="openModal('custom-modal-2')">Open Modal 2</button>
+    </div> -->
+
+
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+
+             <div class="container-fluid">
+
+                <h1>Update Details</h1>
+              <form (ngSubmit)="UpdateItem(f)" #f="ngForm" > -->
+
+
+
+    </td>
+  </tr>
+</tbody>
+</table>
+<div>
+<ngb-pagination [collectionSize]="70" [(page)]="page" [maxSize]="5"  [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+</div>
+      <!--  -->
+
+      <!-- <div class="ui-g" style="padding: 2em;border-bottom: 1px solid #d9d9d9">
+        <div class="ui-g-12 ui-md-3" style="text-align:center">
+            <img src="assets/showcase/images/demo/car/{{car.brand}}.png">
+        </div>
+        <div class="ui-g-12 ui-md-8 car-details">
+            <div class="ui-g">
+                <div class="ui-g-2 ui-sm-6">Vin: </div>
+                <div class="ui-g-10 ui-sm-6"><b>{{car.vin}}</b></div>
+
+                <div class="ui-g-2 ui-sm-6">Year: </div>
+                <div class="ui-g-10 ui-sm-6"><b>{{car.year}}</b></div>
+
+                <div class="ui-g-2 ui-sm-6">Brand: </div>
+                <div class="ui-g-10 ui-sm-6"><b>{{car.brand}}</b></div>
+
+                <div class="ui-g-2 ui-sm-6">Color: </div>
+                <div class="ui-g-10 ui-sm-6"><b>{{car.color}}</b></div>
+            </div>
+        </div> -->
+
+
+<!--  -->
+
+
+
+
+
+
+<!-- <div class="container-fluid">
+  <table class="table table-striped table-dark" >
+    <thead>
+      <th>articleName</th>
+      <th>categoryName</th>
+      <th>createdByName</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of all_articles" >
+        <td>{{item.articleName}}</td>
+        <td>{{item.categoryName}}</td>
+        <td>{{item.createdByName}}</td>
+        <td><button class="btn btn-info" (click)="onUserDelete(item)" >Delete</button>
+        <button class="btn btn-info" (click)="onUserEdit(item)"  >edit</button>
+        </td>
+      </tr>
+    </tbody>
+
+    </table>
+
+</div>
+ -->
